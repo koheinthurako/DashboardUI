@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashboardUI</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+
+    <header class="bgHeader  animate__animated animate__pulse">
+        <section class="container pb-150" id="headerSection1">
+            <nav class="pt-5 pb-2">
+                <div class="row justify-content-center justify-content-lg-between align-items-center">
+                    <div class="col-11 col-lg-8 text-black">
+                        <h4 class="m-0 fw-bold" id="title">Social Media Dashboard</h4>
+                        <small class="text-black-50">Total Followers: 23,004</small>
+                    </div>
+                    <hr class="my-4 d-block  d-lg-none">
+                    <div class="col-11 col-lg-4 justify-content-between justify-content-lg-end d-flex gap-lg-3 align-items-center">
+                        <small class="text-black-50 mb-2" id="darkMode">Dark Mode</small>
+                        <small class="text-black-50 mb-2" id="lightMode">Light Mode</small>
+                        <div class="box">
+                            <input type="checkbox" name="" id="check" onclick="toggleMode()">
+                            <label for="check" class="button"></label>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="container  animate__animated animate__bounceIn" id="containerBox1">
+            <div class="row gap-4 gap-lg-0 justify-content-center" id="firstBox">
+                <div class="col-11 col-lg-3">
+                    <div class="card cardBg text-center py-4 cardBorder1">
+                        <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+                            <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-facebook.svg" alt=""></span>
+                            <small class="text-black-50">@nathaf</small>
+                        </div>
+                        <h1 class="text-black fw-bold display-4 m-0">1987</h1>
+                        <p class="text-black-50 small" style="letter-spacing: 5px;">FOLLOWERS</p>
+                        <div class="d-flex justify-content-center align-items-center gap-2">
+                            <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt=""></span>
+                            <small class="text-success fw-bold">12 Today</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-11 col-lg-3">
+                    <div class="card cardBg text-center py-4 cardBorder1">
+                        <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+                            <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-twitter.svg" alt=""></span>
+                            <small class="text-black-50">@nathaf</small>
+                        </div>
+                        <h1 class="text-black fw-bold display-4 m-0">1044</h1>
+                        <p class="text-black-50 small" style="letter-spacing: 5px;">FOLLOWERS</p>
+                        <div class="d-flex justify-content-center align-items-center gap-2">
+                            <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt=""></span>
+                            <small class="text-success fw-bold">99 Today</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-11 col-lg-3">
+                    <div class="card cardBg text-center py-4 border-3 cardBorder2">
+                        <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+                            <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-instagram.svg" alt=""></span>
+                            <small class="text-black-50">@realnathaf</small>
+                        </div>
+                        <h1 class="text-black fw-bold display-4 m-0">11k</h1>
+                        <p class="text-black-50 small" style="letter-spacing: 5px;">FOLLOWERS</p>
+                        <div class="d-flex justify-content-center align-items-center gap-2">
+                            <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt=""></span>
+                            <small class="text-success fw-bold">1099 Today</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-11 col-lg-3">
+                    <div class="card cardBg text-center py-4 border-3 cardBorder3">
+                        <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+                            <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-youtube.svg" alt=""></span>
+                            <small class="text-black-50">Nathan F.</small>
+                        </div>
+                        <h1 class="text-black fw-bold display-4 m-0">8239</h1>
+                        <p class="text-black-50 small" style="letter-spacing: 5px;">FOLLOWERS</p>
+                        <div class="d-flex justify-content-center align-items-center gap-2">
+                            <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-down.svg" alt=""></span>
+                            <small class="text-danger fw-bold">144 Today</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h5 class="text-black fw-bold mt-5 mb-4 px-4 px-lg-0">Overview - Today</h5>
+
+            <div class="mb-5">
+                <div class="row mb-4 justify-content-center gap-4 gap-lg-0">
+                    <div class="col-11 col-lg-3">
+                        <div class="card cardBg text-center p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <small class="text-black-50 fw-bold">Page views</small>
+                                <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-facebook.svg" alt=""></span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h2 class="text-black fw-bold m-0">87</h2>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt=""></span>
+                                    <small class="text-success fw-bold">3%</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-11 col-lg-3">
+                        <div class="card cardBg text-center p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <small class="text-black-50 fw-bold">Likes</small>
+                                <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-facebook.svg" alt=""></span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h2 class="text-black fw-bold m-0">52</h2>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-down.svg" alt=""></span>
+                                    <small class="text-danger fw-bold">2%</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-11 col-lg-3">
+                        <div class="card cardBg text-center p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <small class="text-black-50 fw-bold">Likes</small>
+                                <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-instagram.svg" alt=""></span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h2 class="text-black fw-bold m-0">5462</h2>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt=""></span>
+                                    <small class="text-success">2257%</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-11 col-lg-3">
+                        <div class="card cardBg text-center p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <small class="text-black-50 fw-bold">Profile Views</small>
+                                <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-instagram.svg" alt=""></span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h2 class="text-black fw-bold m-0">52k</h2>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt=""></span>
+                                    <small class="text-success">1375%</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center gap-4 gap-lg-0">
+                    <div class="col-11 col-lg-3">
+                        <div class="card cardBg text-center p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <small class="text-black-50 fw-bold">Retweets</small>
+                                <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-twitter.svg" alt=""></span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h2 class="text-black fw-bold m-0">17</h2>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt=""></span>
+                                    <small class="text-success fw-bold">303%</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-11 col-lg-3">
+                        <div class="card cardBg text-center p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <small class="text-black-50 fw-bold">Likes</small>
+                                <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-twitter.svg" alt=""></span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h2 class="text-black fw-bold m-0">507</h2>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt=""></span>
+                                    <small class="text-success fw-bold">553%</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-11 col-lg-3">
+                        <div class="card cardBg text-center p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <small class="text-black-50 fw-bold">Likes</small>
+                                <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-youtube.svg" alt=""></span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h2 class="text-black fw-bold m-0">107</h2>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-down.svg" alt=""></span>
+                                    <small class="text-danger">19%</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-11 col-lg-3">
+                        <div class="card cardBg text-center p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <small class="text-black-50 fw-bold">Total Views</small>
+                                <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-youtube.svg" alt=""></span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h2 class="text-black fw-bold m-0">1407</h2>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <span><img src="./social-media-dashboard-with-theme-switcher-master/images/icon-down.svg" alt=""></span>
+                                    <small class="text-danger">12%</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        function toggleMode() {
+            const body = document.body;
+            const card = document.querySelector('.card');
+            
+            body.classList.toggle('dark-mode');
+            card.classList.toggle('dark-mode');
+        }
+
+        const check = document.getElementById('check');
+        const darkMode = document.getElementById('darkMode');
+        const lightMode = document.getElementById('lightMode');
+
+        if (localStorage.getItem('toggleState') === 'lightMode') {
+        check.checked = true;
+        lightMode.style.display = 'none';
+        } else {
+        check.checked = false;
+        darkMode.style.display = 'none';
+        }
+
+        check.addEventListener('change', function() {
+        if (check.checked) {
+            lightMode.style.display = 'none';
+            darkMode.style.display = 'flex';
+        } else {
+            lightMode.style.display = 'flex';
+            darkMode.style.display = 'none';
+        }
+        });
+
+    </script>
+    
+</body>
+</html>

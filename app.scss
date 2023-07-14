@@ -1,0 +1,130 @@
+$font-family-sans-serif: 'Inter', sans-serif;
+
+$success: hsl(163, 72%, 41%);
+
+$light-bg: hsl(0, 0%, 100%);
+$dark-bg: hsl(232, 17%, 14%);
+
+@import "../CLandingPage/node_modules/bootstrap/scss/bootstrap.scss";
+@import "../CLandingPage/node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../CLandingPage/node_modules/animate.css/animate.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    background-color: $light-bg;
+    transition: background-color 0.3s ease;
+}
+
+.button {
+    background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    width: 60px;
+    height: 30px;
+    border-radius: 60px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+
+input:checked + .button {
+    background-image: linear-gradient(to left, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+input:checked + .button::before {
+    transform: translateX(30px);
+}
+
+input {
+    display: none;
+}
+
+.button::before {
+    display: block;
+    background-color: hsl(230, 17%, 14%);
+    width: 20px;
+    height: 20px;
+    border-radius: 60px;
+    margin: 5px;
+    transition: 0.2s;
+    content: '';
+}
+
+.bgHeader {
+    background-color: hsl(225, 100%, 98%);
+}
+
+.pb-150 {
+    padding-bottom: 150px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.card {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.cardBg {
+    background-color:  hsl(227, 47%, 96%);
+}
+
+.cardBorder1 {
+    border-top: 3px solid hsl(210, 78%, 56%);
+}
+
+
+.cardBorder2 {
+    border-top: 3px solid hsl(329, 70%, 58%);
+}
+
+.cardBorder3 {
+    border-top: 3px solid hsl(348, 97%, 39%);
+}
+
+#firstBox {
+    margin-top: -100px;
+}
+
+.card {
+    --bs-card-border-color: none;
+}
+
+.dark-mode {
+    background-color: hsl(232, 17%, 14%);
+    color: #fff;
+}
+  
+.dark-mode .cardBg {
+    background-color: hsl(228, 28%, 20%);
+    color: red;
+}
+
+.dark-mode .text-black-50 {
+    color: #fff !important;
+    opacity: 0.5;
+}
+
+.dark-mode .text-black {
+    color: #fff !important;
+}
+
+.dark-mode .bgHeader {
+    background-color: hsl(232, 19%, 15%);
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode .hrColor {
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 576px) {
+    #title {
+        font-size: calc(1.275rem + 1vw);
+    }
+}
