@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import "../CLandingPage/node_modules/bootstrap-icons/font/bootstrap-icons.css";
-@import "../CLandingPage/node_modules/animate.css/animate.min.css";
+@import "./node_modules/animate.css/animate.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 :root,
 [data-bs-theme=light] {
